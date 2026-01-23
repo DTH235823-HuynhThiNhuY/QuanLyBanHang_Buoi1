@@ -27,17 +27,23 @@ namespace QuanLyBanHang.Data
             if (!optionsBuilder.IsConfigured)
             {
                 // Thay YOUR_CONNECTION_STRING bằng connection string thực tế
-                optionsBuilder.UseSqlServer(ConfigurationManager.ConnectionStrings["QLBHDbContex"].ConnectionString);
+                optionsBuilder.UseSqlServer(ConfigurationManager.ConnectionStrings["QLBHConnection"].ConnectionString);
             }
         }
 
         public DbSet<LoaiSanPham> LoaiSanPhams { get; set; }
         public DbSet<HangSanXuat> HangSanXuat { get; set; }
         public DbSet<SanPham> SanPham { get; set; }
-        public DbSet<NhanVien> NhanViens { get; set; }
+        public DbSet<NhanVien> NhanVien { get; set; }
         public DbSet<KhachHang> KhachHang { get; set; }
         public DbSet<HoaDon> HoaDon { get; set; }
         public DbSet<HoaDon_ChiTiet> HoaDon_ChiTiet { get; set; }
+
+
+
+
+
+
     }
 }
 

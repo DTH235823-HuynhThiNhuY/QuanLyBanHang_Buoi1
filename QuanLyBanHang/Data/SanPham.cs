@@ -18,7 +18,7 @@ namespace QuanLyBanHang.Data
         public string? HinhAnh { get; set; }
         public string? MoTa { get; set; }
         public virtual ObservableCollectionListSource<HoaDon_ChiTiet> HoaDon_ChiTiet { get; } = new();
-        public virtual LoaiSanPham LoaiSanPham { set; get; } = null!;
+        public virtual LoaiSanPham LoaiSanPhams { set; get; } = null!;
         public virtual HangSanXuat HangSanXuat { set; get; } = null!;
      }
 
